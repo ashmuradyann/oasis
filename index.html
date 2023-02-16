@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Oasis.app</title>
+</head>
+
+<body>
+  <div class="navbar-mobile flex-column">
+    <ul>
+      <li>
+        <a href="">
+          Multiply
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Borrow
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Earn
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Discover
+        </a>
+      </li>
+      <li>
+        <a href="" class="flex-center">
+          Assets
+          <svg width="16" height="16" viewBox="0 0 8 14" display="inline-block" focusable="false" role="presentation"
+            class="css-vsh5j7">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.292893 0.707107C0.683417 0.316583 1.31658 0.316583 1.70711 0.707107L6.65685 5.65685L7.36396 6.36396C7.75448 6.75448 7.75449 7.38765 7.36396 7.77817L6.65685 8.48528L1.70711 13.435C1.31658 13.8256 0.683418 13.8256 0.292893 13.435C-0.0976314 13.0445 -0.0976307 12.4113 0.292893 12.0208L5.24264 7.07107L0.292893 2.12132C-0.097631 1.7308 -0.097631 1.09763 0.292893 0.707107Z"
+              fill="currentColor"></path>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <svg class="navbar-mobile-close" viewBox="0 0 50 50" display="inline-block" focusable="false" role="presentation"
+      width="50" onclick="closeMobileNavbar()">
+      <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" opacity="0.7" stroke="#787a9b" fill="transparent">
+      </rect>
+      <path
+        d="M32.0717 19.3431C32.4623 18.9526 32.4623 18.3194 32.0717 17.9289C31.6812 17.5384 31.0481 17.5384 30.6575 17.9289L25.0007 23.5857L19.3438 17.9289C18.9533 17.5384 18.3201 17.5384 17.9296 17.9289C17.5391 18.3194 17.5391 18.9526 17.9296 19.3431L23.5865 24.9999L17.9296 30.6568C17.5391 31.0473 17.5391 31.6805 17.9296 32.071C18.3201 32.4615 18.9533 32.4615 19.3438 32.071L25.0007 26.4142L30.6575 32.071C31.0481 32.4615 31.6812 32.4615 32.0717 32.071C32.4623 31.6805 32.4623 31.0473 32.0717 30.6568L26.4149 24.9999L32.0717 19.3431Z"
+        fill="#787a9b"></path>
+    </svg>
+  </div>
+  <header class="flex-center">
+    <div class="navbar flex-between">
+      <div class="navbar-left flex-between">
+        <a href="">
+          <img src="./assets/images/oasis-home.svg" alt="oasis-home" />
+        </a>
+        <ul class="flex-between">
+          <li class="flex-center">
+            <p>Products</p>
+            <svg width="8" height="8" viewBox="0 0 8 5" display="inline-block" focusable="false" role="presentation"
+              class="css-1xhcs9h">
+              <path class="li-arrow"
+                d="M3.77156 4.73095C3.89137 4.87202 4.10908 4.87202 4.22889 4.73095L7.65705 0.694394C7.82255 0.499524 7.68405 0.200195 7.42838 0.200195H0.572062C0.316397 0.200195 0.1779 0.499524 0.343399 0.694394L3.77156 4.73095Z"
+                fill="#787a9b"></path>
+            </svg>
+          </li>
+          <li class="flex-center">
+            <p>Assets</p>
+            <svg width="8" height="8" viewBox="0 0 8 5" display="inline-block" focusable="false" role="presentation"
+              class="css-1xhcs9h">
+              <path class="li-arrow"
+                d="M3.77156 4.73095C3.89137 4.87202 4.10908 4.87202 4.22889 4.73095L7.65705 0.694394C7.82255 0.499524 7.68405 0.200195 7.42838 0.200195H0.572062C0.316397 0.200195 0.1779 0.499524 0.343399 0.694394L3.77156 4.73095Z"
+                fill="#787a9b"></path>
+            </svg>
+          </li>
+          <li><a href="">Discover</a></li>
+        </ul>
+      </div>
+      <div class="navbar-right flex-between">
+        <a href="./assets/wallet-connect/index.html">
+          <button class="flex-center">
+            Connect Wallet
+            <svg width="15" height="15" viewBox="0 0 20 20" display="inline-block" focusable="false" role="presentation"
+              class="css-1n23f1u">
+              <path
+                d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                stroke-width="0.3" stroke-linecap="round" fill="#000000"></path>
+            </svg>
+          </button>
+        </a>
+        <p>
+          English
+          <svg width="8" height="8" viewBox="0 0 8 5" display="inline-block" focusable="false" role="presentation"
+            class="css-1xhcs9h">
+            <path class="li-arrow"
+              d="M3.77156 4.73095C3.89137 4.87202 4.10908 4.87202 4.22889 4.73095L7.65705 0.694394C7.82255 0.499524 7.68405 0.200195 7.42838 0.200195H0.572062C0.316397 0.200195 0.1779 0.499524 0.343399 0.694394L3.77156 4.73095Z"
+              fill="#787a9b"></path>
+          </svg>
+        </p>
+      </div>
+      <button onclick="openMobileNavbar()">
+        <svg viewBox="0 0 20 20" display="inline-block" focusable="false" role="presentation" width="20px"
+          class="css-8a6pf0">
+          <g fill="#787a9b">
+            <path
+              d="M4 10C4 9.44772 4.44772 9 5 9H13C13.5523 9 14 9.44772 14 10C14 10.5523 13.5523 11 13 11H5C4.44772 11 4 10.5523 4 10Z">
+            </path>
+            <path
+              d="M4 14C4 13.4477 4.44772 13 5 13H15C15.5523 13 16 13.4477 16 14C16 14.5523 15.5523 15 15 15H5C4.44772 15 4 14.5523 4 14Z">
+            </path>
+            <path
+              d="M4 6C4 5.44772 4.44772 5 5 5H15C15.5523 5 16 5.44772 16 6C16 6.55228 15.5523 7 15 7H5C4.44772 7 4 6.55228 4 6Z">
+            </path>
+          </g>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <svg class="body-bg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1882 1017">
+    <circle cx="1387" cy="619.782" r="379" fill="url(#paint0_radial)"></circle>
+    <g filter="url(#filter0_f)">
+      <circle cx="533" cy="617.782" r="379" fill="url(#paint1_radial)"></circle>
+    </g>
+    <g filter="url(#filter1_f)">
+      <circle cx="1025" cy="447.782" r="379" fill="url(#paint2_radial)"></circle>
+    </g>
+    <circle cx="979.001" cy="603.783" r="379" fill="url(#paint3_radial)"></circle>
+    <g filter="url(#filter2_b)" opacity="0.3" style="mix-blend-mode: overlay;">
+      <path class="layerTop" fill="url(#paint4_linear)"
+        d="M1882 557.283c0 195.785-614 530.497-873 354.499-259-176-873-158.714-873-354.499 0-195.785 425-588.5 873-354.5 362 294 873 158.715 873 354.5z">
+      </path>
+    </g>
+    <g filter="url(#filter3_b)" opacity="0.3" style="mix-blend-mode: overlay;">
+      <path class="layerMiddle" fill="url(#paint5_linear)"
+        d="M1641 612.783c0 195.694-105.19 119.921-386.59 149.907C760.813 815.289 26.996 636.749 54.766 303.404c0-195.695 368.411-266.377 768.293-54.475C1204.43 546.791 1641 417.089 1641 612.783z">
+      </path>
+    </g>
+    <g filter="url(#filter4_b)" opacity="0.3" style="mix-blend-mode: overlay;">
+      <path class="layerBottom" fill="url(#paint6_linear)"
+        d="M214.428 402.902C56.491 218.35-80.869-16.385 57.428.902c231.148 28.893 288 352 553 338 171.167-9.043 550.432 9.149 885.002 135.881 132 50 229.91 108 197.57 226s-615-77.881-803-23c-209.013 61.015-561-141-675.572-274.881z">
+      </path>
+    </g>
+    <defs>
+      <filter id="filter0_f" width="798" height="798" x="134" y="218.782" color-interpolation-filters="sRGB"
+        filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+        <feGaussianBlur result="effect1_foregroundBlur" stdDeviation="10"></feGaussianBlur>
+      </filter>
+      <filter id="filter1_f" width="798" height="798" x="626.001" y="48.782" color-interpolation-filters="sRGB"
+        filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+        <feGaussianBlur result="effect1_foregroundBlur" stdDeviation="10"></feGaussianBlur>
+      </filter>
+      <filter id="filter2_b" width="1866" height="950.739" x="76" y="70.565" color-interpolation-filters="sRGB"
+        filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feGaussianBlur in="BackgroundImage" stdDeviation="30"></feGaussianBlur>
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"></feComposite>
+        <feBlend in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"></feBlend>
+      </filter>
+      <filter id="filter3_b" width="1707" height="772" x="-6" y="59.783" color-interpolation-filters="sRGB"
+        filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feGaussianBlur in="BackgroundImage" stdDeviation="30"></feGaussianBlur>
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"></feComposite>
+        <feBlend in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"></feBlend>
+      </filter>
+      <filter id="filter4_b" width="1818.78" height="859.31" x="-59.563" y="-60" color-interpolation-filters="sRGB"
+        filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feGaussianBlur in="BackgroundImage" stdDeviation="30"></feGaussianBlur>
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"></feComposite>
+        <feBlend in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"></feBlend>
+      </filter>
+      <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientTransform="matrix(0 379 -379 0 1387 619.782)"
+        gradientUnits="userSpaceOnUse">
+        <stop stop-color="#BFFFF0"></stop>
+        <stop offset="1" stop-color="#FEFFC7" stop-opacity="0"></stop>
+      </radialGradient>
+      <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientTransform="matrix(0 379 -379 0 533 617.782)"
+        gradientUnits="userSpaceOnUse">
+        <stop stop-color="#EAE2FF"></stop>
+        <stop offset="1" stop-color="#FFC8CE" stop-opacity="0"></stop>
+      </radialGradient>
+      <radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientTransform="matrix(0 379 -379 0 1025 447.782)"
+        gradientUnits="userSpaceOnUse">
+        <stop stop-color="#EAE2FF"></stop>
+        <stop offset="1" stop-color="#FFC8CE" stop-opacity="0"></stop>
+      </radialGradient>
+      <radialGradient id="paint3_radial" cx="0" cy="0" r="1" gradientTransform="matrix(0 379 -379 0 979.001 603.783)"
+        gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FFF8E0"></stop>
+        <stop offset="1" stop-color="#D3EFFF" stop-opacity="0"></stop>
+      </radialGradient>
+      <linearGradient id="paint4_linear" x1="479.479" x2="1671.58" y1="295.749" y2="941.718"
+        gradientUnits="userSpaceOnUse">
+        <stop stop-color="#141414"></stop>
+        <stop offset="1"></stop>
+      </linearGradient>
+      <linearGradient id="paint5_linear" x1="372.709" x2="1281.03" y1="41.991" y2="738.34"
+        gradientUnits="userSpaceOnUse">
+        <stop stop-color="#141414"></stop>
+        <stop offset="1"></stop>
+      </linearGradient>
+      <linearGradient id="paint6_linear" x1="229" x2="1617" y1="206.783" y2="656.783" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#141414"></stop>
+        <stop offset="1" stop-opacity="0.57"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
+  <main class="flex-center">
+    <div class="main-container flex-column">
+      <button class="aave-read-more flex-between">
+        <img src="./assets/images/aave-logo.png" alt="aave-logo" />
+        <p>
+          We've launched Multiply for Aave. Read more here
+          <svg width="13" height="13" viewBox="0 0 20 20" display="inline-block" focusable="false" role="presentation"
+            class="css-1n23f1u">
+            <path
+              d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+              stroke-width="0.3" stroke-linecap="round" fill="#000000"></path>
+          </svg>
+        </p>
+      </button>
+      <div class="main-title">
+        <h1>Deploy your crypto into DeFi</h1>
+        <p>Earn a yield, Multiply your exposure or Borrow against your crypto. ETH, BTC and 30 more cryptos available to
+          put to work.</p>
+        <a href="./assets/wallet-connect/index.html">
+          Connect a wallet
+          <svg width="15" height="15" viewBox="0 0 20 20" display="inline-block" focusable="false" role="presentation"
+            class="css-1n23f1u">
+            <path
+              d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+              stroke-width="0.3" stroke-linecap="round" fill="#ffffff"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="main-crypto-list flex-center">
+        <div>
+          <img src="./assets/images/eth-logo.png" alt="eth-logo">
+          <p>ETH</p>
+        </div>
+        <div>
+          <img src="./assets/images/btc-logo.png" alt="btc-logo">
+          <p>BTC</p>
+        </div>
+        <div>
+          <img src="./assets/images/dai-logo.png" alt="dai-logo">
+          <p>DAI</p>
+        </div>
+        <div>
+          <div class="uni-logo">
+            <svg width="24" height="24" viewBox="0 0 32 32" display="inline-block" focusable="false" role="presentation"
+              class="css-1ndjht1">
+              <circle cx="14.8293" cy="14.8293" r="14.8293" fill="white"></circle>
+              <circle cx="14.8294" cy="14.8294" r="11.7073" stroke="#BEC9D0" stroke-width="1.5" stroke-linecap="round"
+                stroke-dasharray="2 5" fill="white"></circle>
+              <g filter="url(#uni_lp_filter_1)">
+                <circle cx="24.195" cy="24.1955" r="7.80488" fill="url(#uni_lip_circle_1)"></circle>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M23.5276 22.6646C23.5078 22.734 23.4781 22.8001 23.4351 22.8596C23.3525 22.9653 23.2467 23.048 23.1212 23.0975C23.0088 23.1438 22.8931 23.1768 22.7709 23.1901C22.7444 23.1934 22.718 23.1967 22.6915 23.1967C22.6155 23.2 22.5428 23.2264 22.4834 23.276C22.4239 23.3222 22.3809 23.3883 22.3611 23.461C22.3512 23.4974 22.3446 23.5337 22.3413 23.5734C22.3333 23.6313 22.3301 23.6917 22.3267 23.7574C22.3244 23.8003 22.322 23.8456 22.3181 23.894C22.2917 24.1021 22.2322 24.3037 22.1397 24.4921C22.1208 24.532 22.1015 24.5707 22.0825 24.6088C21.9819 24.8104 21.8905 24.9938 21.9183 25.2357C21.9381 25.424 22.0339 25.5496 22.1628 25.6818C22.224 25.7447 22.3054 25.7985 22.3898 25.8542C22.6243 26.009 22.8824 26.1794 22.7973 26.6071C22.7279 26.9541 22.1496 27.3209 21.3399 27.4465C21.4192 27.4333 21.2375 27.1226 21.2243 27.1028C21.2015 27.0668 21.178 27.0314 21.1545 26.9958C21.0894 26.8975 21.0241 26.799 20.9731 26.6897C20.8376 26.4022 20.7748 26.0717 20.831 25.7578C20.8822 25.4735 21.0703 25.2454 21.2503 25.0274L21.2503 25.0274C21.2795 24.9919 21.3085 24.9568 21.3366 24.9217C21.5779 24.621 21.8323 24.2277 21.8885 23.8378C21.8934 23.8023 21.8979 23.764 21.9025 23.7239C21.9104 23.6558 21.919 23.5822 21.9315 23.5073C21.9513 23.3784 21.991 23.2495 22.0537 23.1339C22.0934 23.0579 22.1496 22.9885 22.2124 22.929C22.2454 22.8992 22.2685 22.8563 22.2752 22.81C22.2818 22.7638 22.2752 22.7175 22.252 22.6778L20.9566 20.358L22.8138 22.6481C22.8336 22.6745 22.8601 22.6977 22.8931 22.7109C22.9229 22.7274 22.9559 22.734 22.9923 22.734C23.0253 22.734 23.0584 22.7274 23.0914 22.7142C23.1212 22.701 23.1509 22.6811 23.1707 22.6547C23.1939 22.6283 23.2071 22.5919 23.2071 22.5556C23.2071 22.5192 23.1972 22.4829 23.174 22.4564C23.1129 22.3788 23.0501 22.3003 22.9873 22.2218L22.9872 22.2217C22.9245 22.1432 22.8617 22.0648 22.8006 21.9872L22.3346 21.4088L21.3928 20.2588L19.5125 17.9521L21.5151 20.1531L22.5131 21.2568L23.0121 21.8087L23.1112 21.9195C23.2434 22.067 23.3756 22.2145 23.5078 22.3705L23.5342 22.4035L23.5408 22.4531C23.5475 22.5258 23.5442 22.5985 23.5276 22.6646ZM28.1972 23.2793C28.2368 23.3321 28.2698 23.3849 28.3028 23.4444L28.3029 23.4445C28.3029 23.1999 28.1476 22.7935 27.8403 22.4036L27.8337 22.3937C27.7378 22.2747 27.6354 22.1656 27.523 22.0632C27.5032 22.0434 27.4801 22.0235 27.457 22.0037C27.3149 21.8781 27.1562 21.7691 26.991 21.6798L26.9778 21.6732C26.4556 21.3857 25.7749 21.2403 24.9355 21.4056C24.8231 21.2701 24.7009 21.1412 24.572 21.0189C24.3737 20.8305 24.1391 20.6818 23.8846 20.5827C23.6334 20.4902 23.3625 20.4571 23.0948 20.4869C23.3525 20.51 23.6037 20.5827 23.835 20.6984C24.0597 20.8206 24.258 20.9759 24.4299 21.1643C24.6017 21.356 24.7636 21.5576 24.9157 21.7658L24.97 21.8359L24.97 21.8359C25.1137 22.0218 25.2592 22.2099 25.4411 22.3771C25.5468 22.473 25.6592 22.5556 25.7848 22.625C25.8178 22.6415 25.8509 22.658 25.8839 22.6712C25.9004 22.6778 25.9161 22.6844 25.9318 22.691L25.9318 22.691L25.9318 22.6911C25.9475 22.6977 25.9632 22.7043 25.9798 22.7109C26.0425 22.734 26.1086 22.7539 26.1747 22.7737L26.1747 22.7737C26.4391 22.8464 26.7101 22.8761 26.9745 22.8894C27.0173 22.8915 27.0597 22.8933 27.102 22.8951L27.102 22.8951L27.102 22.8951L27.102 22.8951L27.102 22.8951L27.1021 22.8951L27.1021 22.8951L27.1021 22.8951L27.1021 22.8951C27.1902 22.8988 27.2773 22.9025 27.3644 22.9092C27.49 22.9158 27.6156 22.9356 27.7378 22.9687C27.9229 23.0182 28.0848 23.1273 28.1972 23.2793ZM27.523 22.0598C27.5115 22.0499 27.5007 22.04 27.49 22.0301C27.4793 22.0202 27.4685 22.0103 27.4569 22.0004C27.4681 22.0099 27.4793 22.0202 27.49 22.0302L27.4901 22.0302L27.4901 22.0302L27.4901 22.0303L27.4901 22.0303C27.5017 22.041 27.5128 22.0513 27.523 22.0598ZM27.2011 24.496C26.3509 24.1509 25.461 23.7896 25.593 22.7769C25.8772 23.0802 26.3232 23.1436 26.808 23.2124C27.2477 23.2749 27.7192 23.3419 28.131 23.5965C29.1026 24.1979 28.9605 25.3645 28.63 25.7941C28.6609 25.0887 27.9463 24.7986 27.2011 24.496ZM23.7689 23.9897C23.9936 23.9665 24.4728 23.8509 24.258 23.4741C24.2117 23.3981 24.1456 23.3354 24.0663 23.2957C23.987 23.256 23.8978 23.2395 23.8085 23.2461C23.716 23.256 23.6334 23.2924 23.564 23.3519C23.4946 23.4114 23.4483 23.4907 23.4252 23.5799C23.3591 23.8277 23.4285 24.0227 23.7689 23.9897ZM23.7094 21.0089C23.5706 20.847 23.3525 20.761 23.1377 20.7313C23.1278 20.7842 23.1244 20.837 23.1211 20.8932C23.1112 21.3361 23.2699 21.8218 23.5739 22.1622C23.673 22.2713 23.7887 22.3605 23.9209 22.4266C23.9969 22.463 24.1985 22.5555 24.2745 22.4729C24.2811 22.4663 24.2844 22.4563 24.2844 22.4464C24.2877 22.4398 24.2844 22.4299 24.2811 22.42C24.2693 22.3826 24.2446 22.3499 24.2202 22.3176L24.2202 22.3176L24.2202 22.3176C24.2037 22.2958 24.1874 22.2742 24.1753 22.2515C24.1624 22.2268 24.1487 22.2031 24.135 22.1794L24.135 22.1793L24.135 22.1793L24.135 22.1793L24.135 22.1793C24.1102 22.1362 24.0855 22.0935 24.0663 22.0466C24.0135 21.9216 23.9864 21.7896 23.9595 21.6585C23.9544 21.6336 23.9493 21.6087 23.944 21.5839C23.901 21.3823 23.8515 21.1708 23.7094 21.0089ZM26.7199 24.5516C26.5015 25.1616 26.8538 25.6766 27.204 26.1883C27.5956 26.7606 27.9844 27.3289 27.5692 28.0215C28.3755 27.6877 28.7588 26.6831 28.4251 25.8834C28.2126 25.3772 27.7016 25.1022 27.2287 24.8476C27.0471 24.7499 26.8711 24.6552 26.7199 24.5516ZM24.3537 26.0056C24.2083 26.0684 24.0695 26.1444 23.944 26.2403C24.2315 26.1345 24.5322 26.075 24.8329 26.0684C24.8949 26.0644 24.9568 26.0615 25.0192 26.0585L25.0193 26.0585L25.0194 26.0585C25.11 26.0542 25.2017 26.0498 25.2956 26.042C25.4608 26.0321 25.6227 25.999 25.7781 25.9429C25.9433 25.8867 26.092 25.7941 26.2143 25.6719C26.3365 25.5463 26.4258 25.3877 26.4654 25.2158C26.5018 25.0506 26.4985 24.8821 26.4522 24.7234C26.4059 24.5648 26.3233 24.4161 26.2077 24.2971C26.2638 24.4359 26.2969 24.5846 26.3101 24.7367C26.32 24.8754 26.3002 25.0176 26.2539 25.1497C26.2077 25.2753 26.135 25.3877 26.0358 25.4802C25.9334 25.5727 25.8177 25.6454 25.6888 25.695C25.5122 25.7675 25.3122 25.7965 25.1039 25.8267L25.1039 25.8267L25.1039 25.8267L25.1039 25.8267L25.1039 25.8267C25.0082 25.8406 24.9108 25.8547 24.8131 25.8735C24.6545 25.9032 24.5025 25.9462 24.3537 26.0056ZM26.905 28.5073C26.8922 28.5174 26.8794 28.5277 26.8664 28.5381C26.8326 28.5654 26.7978 28.5934 26.7596 28.6197C26.7067 28.6527 26.6539 28.6825 26.5977 28.7089C26.482 28.7651 26.3531 28.7948 26.2242 28.7948C25.874 28.7882 25.6228 28.5272 25.4774 28.2297C25.4387 28.1511 25.4046 28.07 25.3705 27.9889C25.3171 27.862 25.2637 27.7353 25.1932 27.6184C25.0247 27.3441 24.7371 27.1227 24.4001 27.1623C24.2613 27.1788 24.1324 27.2416 24.0564 27.3606C23.8548 27.6712 24.1456 28.1075 24.5124 28.048C24.5422 28.0447 24.5752 28.0348 24.605 28.0215C24.6347 28.0083 24.6611 27.9918 24.6843 27.972C24.7371 27.929 24.7735 27.8728 24.7966 27.81C24.8198 27.7439 24.8264 27.6745 24.8132 27.6051C24.7966 27.5324 24.757 27.4697 24.6942 27.43C24.7636 27.463 24.8198 27.5225 24.8495 27.5952C24.8792 27.6712 24.8859 27.7505 24.8693 27.8299C24.8561 27.9125 24.8198 27.9885 24.7636 28.0513C24.7338 28.0843 24.7008 28.1108 24.6644 28.1339C24.6281 28.157 24.5884 28.1769 24.5488 28.1901C24.4662 28.2198 24.3769 28.2264 24.291 28.2165C24.1687 28.2 24.0531 28.1504 23.9572 28.0711C23.889 28.0169 23.8305 27.9517 23.7721 27.8867L23.7721 27.8866C23.7344 27.8446 23.6967 27.8027 23.6565 27.7638C23.5375 27.6415 23.3988 27.539 23.2467 27.463C23.141 27.4168 23.0286 27.3837 22.9163 27.3606C22.863 27.3481 22.8068 27.3415 22.7533 27.3352L22.7444 27.3342C22.7393 27.3335 22.7304 27.332 22.7191 27.3301C22.6722 27.3222 22.5853 27.3076 22.5693 27.3209C22.7477 27.1557 22.9427 27.0103 23.1509 26.8847C23.3657 26.7591 23.5937 26.66 23.8317 26.5939C24.0795 26.5245 24.3406 26.5047 24.595 26.5344C24.7272 26.551 24.8561 26.584 24.9784 26.6336C25.1073 26.6864 25.2262 26.7591 25.3287 26.8517C25.4311 26.9475 25.5137 27.0632 25.5732 27.1921C25.6261 27.311 25.6658 27.4366 25.6922 27.5655C25.706 27.6353 25.7164 27.7123 25.7271 27.792C25.7751 28.1498 25.8306 28.5626 26.2441 28.6329C26.2705 28.6395 26.2969 28.6428 26.3234 28.6428L26.406 28.6461C26.4622 28.6428 26.5183 28.6329 26.5745 28.623L26.5745 28.623C26.6836 28.5965 26.796 28.5569 26.905 28.5073ZM23.954 28.0744C23.8648 28.005 23.7855 27.9223 23.7161 27.8331C23.7921 27.919 23.8714 27.9984 23.954 28.0744Z"
+                  fill="white"></path>
+              </g>
+            </svg>
+            <img src="./assets/images/uni-lp-logo.png" alt="uni-lp-logo">
+          </div>
+          <p>UNI LP</p>
+        </div>
+        <div>
+          <img src="./assets/images/yfi-logo.png" alt="yfi-logo">
+          <p>YFI</p>
+        </div>
+      </div>
+      <div class="main-transactions flex-between">
+        <div>
+          <p>30 Day Volume</p>
+          <h1>$279.92M</h1>
+        </div>
+        <div>
+          <p>Managed on Oasis</p>
+          <h1>$2.34B</h1>
+        </div>
+        <div>
+          <p>Median Vault</p>
+          <h1>$121.89K</h1>
+        </div>
+      </div>
+      <div class="main-cards flex-column">
+        <div class="main-cards-select flex-center">
+          <div class="main-cards-option option-active">Multiply on Oasis</div>
+          <div class="main-cards-option">Borrow on Oasis</div>
+          <div class="main-cards-option">Earn on Oasis</div>
+        </div>
+        <div class="main-cards-select-mobile flex-between" onclick="openSelect()">
+          <div class="select-value">Multiply on Oasis</div>
+          <div class="select-arrow flex-center">
+            <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-19bqh2r"
+              currentColor>
+              <path fill="#cccccc"
+                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
+              </path>
+            </svg>
+          </div>
+          <div class="main-cards-select-mobile-options">
+            <div class="cards-mobile-option mobile-option-active" onclick="setSelectValue('Multiply on Oasis')">Multiply on Oasis</div>
+            <div class="cards-mobile-option" onclick="setSelectValue('Borrow on Oasis')">Borrow on Oasis</div>
+            <div class="cards-mobile-option" onclick="setSelectValue('Earn on Oasis')">Earn onOasis</div>
+          </div>
+        </div>
+        <div class="main-cards-text main-cards-text-active">
+          <p>
+            Multiply your exposure to your favorite crypto assets. Browse our featured products here.
+            <a href="">
+              See all Multiply collateral types
+              <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                role="presentation" class="css-1n23f1u">
+                <path
+                  d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                  stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+              </svg>
+            </a>
+          </p>
+          <p>
+            We've launched Multiply for Aave.
+            <a href="">
+              Read more
+              <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                role="presentation" class="css-1n23f1u">
+                <path
+                  d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                  stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+              </svg>
+            </a>
+          </p>
+        </div>
+        <div class="main-cards-text">
+          <p>
+            Borrow Dai against your favorite crypto assets. Use the Dai however you like.
+            <a href="">
+              See all Borrow collateral types
+              <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                role="presentation" class="css-1n23f1u">
+                <path
+                  d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                  stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+              </svg>
+            </a>
+          </p>
+        </div>
+        <div class="main-cards-text">
+          <p>
+            Put your crypto assets to work today. Start generating the best yields. Select your Earn product below.
+            <a href="">
+              Learn more about Earn
+              <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                role="presentation" class="css-1n23f1u">
+                <path
+                  d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                  stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+              </svg>
+            </a>
+          </p>
+        </div>
+        <div class="main-cards-container main-cards-multiply main-cards-active">
+          <div class="multiply-card bg-purple flex-column" data-text="New">
+            <div class="card-header flex-between">
+              <div>
+                <p>Highest ETH multiple option</p>
+                <p>Maximise your ETH exposure with Aave and USDC.</p>
+              </div>
+              <img src="./assets/images/card-eth-1.png" alt="card-eth">
+            </div>
+            <div class="card-suggestion bg-purple-inner flex-column">
+              <p>With 100 ETH 👇</p>
+              <p>Get up to 571 ETH exposure</p>
+            </div>
+            <div class="card-stats">
+              <div class="flex-between">
+                <p>Max Multiple</p>
+                <p>5.71x</p>
+              </div>
+              <div class="flex-between">
+                <p>Position</p>
+                <p>ETH / USDC</p>
+              </div>
+              <div class="flex-between">
+                <p>Current Liquidity Available</p>
+                <p>227.80M</p>
+              </div>
+              <div class="flex-between">
+                <p>Variable Annual Fee</p>
+                <p>3.17%</p>
+              </div>
+              <div class="flex-between">
+                <p>Protocol</p>
+                <a href="">
+                  Aave V2
+                  <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button>Multiply</button>
+          </div>
+          <div class="multiply-card bg-blue flex-column" data-text="New">
+            <div class="card-header flex-between">
+              <div>
+                <p>Highest stETH multiple option</p>
+                <p>Maximise your stETH exposure with Aave and USDC.</p>
+              </div>
+              <img src="./assets/images/card-steth-1.png" alt="card-eth">
+            </div>
+            <div class="card-suggestion bg-blue-inner flex-column">
+              <p>With 100 STETH 👇</p>
+              <p>Get up to 357 STETH exposure</p>
+            </div>
+            <div class="card-stats">
+              <div class="flex-between">
+                <p>Max Multiple</p>
+                <p>5.71x</p>
+              </div>
+              <div class="flex-between">
+                <p>Position</p>
+                <p>stETH / USDC</p>
+              </div>
+              <div class="flex-between">
+                <p>Current Liquidity Available</p>
+                <p>227.80M</p>
+              </div>
+              <div class="flex-between">
+                <p>Variable Annual Fee</p>
+                <p>3.17%</p>
+              </div>
+              <div class="flex-between">
+                <p>Protocol</p>
+                <a href="">
+                  Aave V2
+                  <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button>Multiply</button>
+          </div>
+          <div class="multiply-card bg-yellow flex-column" data-text="New">
+            <div class="card-header flex-between">
+              <div>
+                <p>High wBTC multiple option</p>
+                <p>The biggest possible Multiple to maximize your exposure to WBTC.</p>
+              </div>
+              <img src="./assets/images/card-wbtc-1.png" alt="card-eth">
+            </div>
+            <div class="card-suggestion bg-yellow-inner flex-column">
+              <p>With 100 WBTC 👇</p>
+              <p>Get up to 357 WBTC exposure</p>
+            </div>
+            <div class="card-stats">
+              <div class="flex-between">
+                <p>Max Multiple</p>
+                <p>5.71x</p>
+              </div>
+              <div class="flex-between">
+                <p>Position</p>
+                <p>WBTC / USDC</p>
+              </div>
+              <div class="flex-between">
+                <p>Current Liquidity Available</p>
+                <p>227.80M</p>
+              </div>
+              <div class="flex-between">
+                <p>Variable Annual Fee</p>
+                <p>3.17%</p>
+              </div>
+              <div class="flex-between">
+                <p>Protocol</p>
+                <a href="">
+                  Aave V2
+                  <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button>Multiply</button>
+          </div>
+          <div class="multiply-card bg-purple flex-column" data-text="Automation Enabled">
+            <div class="card-header flex-between">
+              <div>
+                <p>High ETH multiple with liquidation delay</p>
+                <p>The biggest possible Multiple to maximize your exposure to ETH.</p>
+              </div>
+              <img src="./assets/images/card-eth-2.png" alt="card-eth">
+            </div>
+            <div class="card-suggestion bg-purple-inner flex-column">
+              <p>With 98.00 ETH 👇</p>
+              <p>Get up to 424.34 ETH exposure</p>
+            </div>
+            <div class="card-stats">
+              <div class="flex-between">
+                <p>Max Multiple</p>
+                <p>5.71x</p>
+              </div>
+              <div class="flex-between">
+                <p>Position</p>
+                <p>ETH-B / USDC</p>
+              </div>
+              <div class="flex-between">
+                <p>Current Liquidity Available</p>
+                <p>227.80M</p>
+              </div>
+              <div class="flex-between">
+                <p>Variable Annual Fee</p>
+                <p>3.17%</p>
+              </div>
+              <div class="flex-between">
+                <p>Protocol</p>
+                <a href="">
+                  Aave V2
+                  <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button>Multiply</button>
+          </div>
+          <div class="multiply-card bg-yellow flex-column" data-text="Automation Enabled">
+            <div class="card-header flex-between">
+              <div>
+                <p>High wBTC multiple with liquidation delay</p>
+                <p>The biggest possible Multiple to maximize your exposure to WBTC.</p>
+              </div>
+              <img src="./assets/images/card-wbtc-2.png" alt="card-eth">
+            </div>
+            <div class="card-suggestion bg-yellow-inner flex-column">
+              <p>With 6.0000 WBTC 👇</p>
+              <p>Get up to 25.98 WBTC exposure</p>
+            </div>
+            <div class="card-stats">
+              <div class="flex-between">
+                <p>Max Multiple</p>
+                <p>5.71x</p>
+              </div>
+              <div class="flex-between">
+                <p>Position</p>
+                <p>WBTC-B / USDC</p>
+              </div>
+              <div class="flex-between">
+                <p>Current Liquidity Available</p>
+                <p>227.80M</p>
+              </div>
+              <div class="flex-between">
+                <p>Variable Annual Fee</p>
+                <p>3.17%</p>
+              </div>
+              <div class="flex-between">
+                <p>Protocol</p>
+                <a href="">
+                  Aave V2
+                  <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button>Multiply</button>
+          </div>
+          <div class="multiply-card bg-blue flex-column" data-text="Automation Enabled">
+            <div class="card-header flex-between">
+              <div>
+                <p>StETH with medium cost and multiple</p>
+                <p>Great for Borrowing or Multiplying while earning staking rewards.</p>
+              </div>
+              <img src="./assets/images/card-wbtc-2.png" alt="card-eth">
+            </div>
+            <div class="card-suggestion bg-blue-inner flex-column">
+              <p>With 88.00 WSTETH 👇</p>
+              <p>Get up to 234.08 WSTETH exposure</p>
+            </div>
+            <div class="card-stats">
+              <div class="flex-between">
+                <p>Max Multiple</p>
+                <p>5.71x</p>
+              </div>
+              <div class="flex-between">
+                <p>Position</p>
+                <p>WSTETH-A / USDC</p>
+              </div>
+              <div class="flex-between">
+                <p>Current Liquidity Available</p>
+                <p>227.80M</p>
+              </div>
+              <div class="flex-between">
+                <p>Variable Annual Fee</p>
+                <p>3.17%</p>
+              </div>
+              <div class="flex-between">
+                <p>Protocol</p>
+                <a href="">
+                  Aave V2
+                  <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button>Multiply</button>
+          </div>
+        </div>
+        <div class="main-cards-container main-cards-borrow">
+          <div class="multiply-card bg-purple flex-column" data-text="Lowest fees for Borrowing">
+            <div class="card-header flex-between">
+              <div>
+                <p>Lowest ETH borrowing cost</p>
+                <p>The lowest Stability Fee and cheapest Vault for borrowing using ETH.</p>
+              </div>
+              <img src="./assets/images/card-eth-2.png" alt="card-eth">
+            </div>
+            <div class="card-suggestion bg-purple-inner flex-column">
+              <p>With 168.00 ETH 👇</p>
+              <p>Borrow up to 150,000.00 DAI</p>
+            </div>
+            <div class="card-stats">
+              <div class="flex-between">
+                <p>Min Coll. Ratio</p>
+                <p>170.00%</p>
+              </div>
+              <div class="flex-between">
+                <p>Current Liquidity Available</p>
+                <p>99.39M</p>
+              </div>
+              <div class="flex-between">
+                <p>Variable Annual Fee</p>
+                <p>0.50%</p>
+              </div>
+              <div class="flex-between">
+                <p>Protocol</p>
+                <a href="">
+                  Maker
+                  <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button>Borrow</button>
+          </div>
+          <div class="multiply-card bg-yellow flex-column" data-text="Lowest fees for Borrowing">
+            <div class="card-header flex-between">
+              <div>
+                <p>Lowest wBTC borrowing cost</p>
+                <p>The lowest Stability Fee and cheapest Vault for borrowing using WBTC.</p>
+              </div>
+              <img src="./assets/images/card-wbtc-2.png" alt="card-eth">
+            </div>
+            <div class="card-suggestion bg-yellow-inner flex-column">
+              <p>With 13.00 WBTC 👇</p>
+              <p>Borrow up to 161,000.00 DAI</p>
+            </div>
+            <div class="card-stats">
+              <div class="flex-between">
+                <p>Min Coll. Ratio</p>
+                <p>175.00%</p>
+              </div>
+              <div class="flex-between">
+                <p>Current Liquidity Available</p>
+                <p>20.01M</p>
+              </div>
+              <div class="flex-between">
+                <p>Variable Annual Fee</p>
+                <p>0.75%</p>
+              </div>
+              <div class="flex-between">
+                <p>Protocol</p>
+                <a href="">
+                  Maker
+                  <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button>Borrow</button>
+          </div>
+          <div class="multiply-card bg-blue flex-column" data-text="Staking rewards">
+            <div class="card-header flex-between">
+              <div>
+                <p>Lowest stETH borrowing cost</p>
+                <p>The lowest Annual Fee and cheapest Vault for borrowing using staked ETH.</p>
+              </div>
+              <img src="./assets/images/card-steth-2.png" alt="card-eth">
+            </div>
+            <div class="card-suggestion bg-blue-inner flex-column">
+              <p>With 165.00 WSTETH 👇</p>
+              <p>Borrow up to 150,000.00 DAI</p>
+            </div>
+            <div class="card-stats">
+              <div class="flex-between">
+                <p>Min Coll. Ratio</p>
+                <p>175.00%</p>
+              </div>
+              <div class="flex-between">
+                <p>Current Liquidity Available</p>
+                <p>20.01M</p>
+              </div>
+              <div class="flex-between">
+                <p>Variable Annual Fee</p>
+                <p>0.75%</p>
+              </div>
+              <div class="flex-between">
+                <p>Protocol</p>
+                <a href="">
+                  Maker
+                  <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button>Borrow</button>
+          </div>
+        </div>
+        <div class="main-cards-container main-cards-earn">
+          <div class="multiply-card bg-blue flex-column">
+            <div class="card-header flex-between">
+              <div>
+                <p>stETH/ETH Aave</p>
+                <p>Earn on your ETH with increased staking rewards. Borrow ETH on Aave to get more exposure to stETH.
+                </p>
+              </div>
+              <img src="./assets/images/card-steth-1.png" alt="card-eth">
+            </div>
+            <div class="card-suggestion bg-blue-inner flex-column">
+              <p>With 168.00 ETH 👇</p>
+              <p>Get up to 357 ETH exposure to stETH</p>
+            </div>
+            <div class="card-stats">
+              <div class="flex-between">
+                <p>Max Multiple</p>
+                <p>3.57x</p>
+              </div>
+              <div class="flex-between">
+                <p>7 day net APY</p>
+                <p>9.00%</p>
+              </div>
+              <div class="flex-between">
+                <p>90 day net APY</p>
+                <p>9.94%</p>
+              </div>
+              <div class="flex-between">
+                <p>Current Liquidity Available</p>
+                <p>631.42M</p>
+              </div>
+              <div class="flex-between">
+                <p>Protocol</p>
+                <a href="">
+                  Aave V2
+                  <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button>Earn</button>
+          </div>
+          <div class="multiply-card bg-green flex-column">
+            <div>
+              <div class="card-header flex-between">
+                <div>
+                  <p>DAI Savings Rate</p>
+                  <p>Earn on your Dai using the Maker Protocol.</p>
+                </div>
+                <img src="./assets/images/card-dai.png" alt="card-eth">
+              </div>
+              <div class="card-suggestion bg-green-inner flex-column">
+                <p>With 100,000.00 DAI 👇</p>
+                <p>Earn up to 1,000.00 Dai per year</p>
+              </div>
+              <div class="card-stats">
+                <div class="flex-between">
+                  <p>Current APY</p>
+                  <p>1.00%</p>
+                </div>
+                <div class="flex-between">
+                  <p>Total Value Locked</p>
+                  <p>36.82M</p>
+                </div>
+                <div class="flex-between">
+                  <p>Protocol</p>
+                  <a href="">
+                    Maker
+                    <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                      role="presentation" class="css-1n23f1u">
+                      <path
+                        d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                        stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button>Earn</button>
+          </div>
+          <div class="multiply-card bg-pink flex-column">
+            <div>
+              <div class="card-header flex-between">
+                <div>
+                  <p>50x UNI V3 DAI / USDC 0.01% tier</p>
+                  <p>Earn on your Dai with exposure to the DAI/USDC 1bps pool on UNI V3.</p>
+                </div>
+                <img src="./assets/images/card-uni.png" alt="card-eth">
+              </div>
+              <div class="card-suggestion bg-pink-inner flex-column">
+                <p>With 100,000.00 DAI 👇</p>
+                <p>Get up to 5.00M exposure to the DAI/USDC UNI V3 1bps pool</p>
+              </div>
+              <div class="card-stats">
+                <div class="flex-between">
+                  <p>Max Multiple</p>
+                  <p>50x</p>
+                </div>
+                <div class="flex-between">
+                  <p>7 day net APY</p>
+                  <p>5.54%</p>
+                </div>
+                <div class="flex-between">
+                  <p>90 day net APY</p>
+                  <p>5.13%</p>
+                </div>
+                <div class="flex-between">
+                  <p>Current Liquidity Available</p>
+                  <p>0.00</p>
+                </div>
+                <div class="flex-between">
+                  <p>Protocol</p>
+                  <a href="">
+                    Maker
+                    <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                      role="presentation" class="css-1n23f1u">
+                      <path
+                        d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                        stroke-width="0.3" stroke-linecap="round" fill="#575CFE"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button style="opacity: .5; pointer-events: none;">Full</button>
+          </div>
+        </div>
+      </div>
+      <div class="main-questions flex-column">
+        <h1>Have some questions?</h1>
+        <div class="main-questions-wrapper flex-between">
+          <div>
+            <h1>Learn</h1>
+            <p>Deep dive into oasis.app functionalities and glossary</p>
+            <ul>
+              <li>
+                <a href="">
+                  Get started
+                  <svg width="15" height="15" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#000000"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Tutorials
+                  <svg width="15" height="15" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#000000"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Key concepts
+                  <svg width="15" height="15" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#000000"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1>Support</h1>
+            <p>Contact Oasis.app team whenever you need</p>
+            <ul>
+              <li>
+                <a href="">
+                  FAQ
+                  <svg width="15" height="15" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#000000"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Discord
+                  <svg width="15" height="15" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#000000"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Contact us
+                  <svg width="15" height="15" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#000000"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Twitter
+                  <svg width="15" height="15" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                    role="presentation" class="css-1n23f1u">
+                    <path
+                      d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                      stroke-width="0.3" stroke-linecap="round" fill="#000000"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-getstarted flex-column">
+        <h1>Get started with Oasis.app</h1>
+        <div class="main-getstarted-wrapper flex-between">
+          <div class="main-getstarted-multiply">
+            <h1>Multiply your assets</h1>
+            <p>In a single transaction you can open a Maker vault, generate DAI, and spend them for more collateral.</p>
+            <a href="">
+              Open vault
+              <svg width="15" height="15" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                role="presentation" class="css-1n23f1u">
+                <path
+                  d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                  stroke-width="0.3" stroke-linecap="round" fill="#000000"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="main-getstarted-borrow flex-column">
+            <div>
+              <h1>Borrow Dai</h1>
+              <p>Choose your preferred token as collateral and open a Maker vault to get DAI</p>
+              <a href="">
+                Open vault
+                <svg width="15" height="15" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                  role="presentation" class="css-1n23f1u">
+                  <path
+                    d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                    stroke-width="0.3" stroke-linecap="round" fill="#000000"></path>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <h1>Manage your vault</h1>
+              <p>Make actions on your vault whenever you want</p>
+              <a href="">
+                Connect your wallet
+                <svg width="15" height="15" viewBox="0 0 20 20" display="inline-block" focusable="false"
+                  role="presentation" class="css-1n23f1u">
+                  <path
+                    d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                    stroke-width="0.3" stroke-linecap="round" fill="#000000"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-stayuptodate flex-column">
+        <h1>Stay up to date with Oasis.app</h1>
+        <div class="main-stayuptodate-input-wrapper flex-between">
+          <input type="text" placeholder="Email Address">
+          <a href="" class="flex-center">
+            Subscribe
+            <svg width="15" height="15" viewBox="0 0 20 20" display="inline-block" focusable="false" role="presentation"
+              class="css-1n23f1u">
+              <path
+                d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                stroke-width="0.3" stroke-linecap="round" fill="#787a9b"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="flex-center">
+    <div class="footer-container flex-between">
+      <div class="footer-social-links">
+        <img src="./assets/images/oasis-home-black.svg" alt="svg">
+        <div class="flex-between">
+          <a href="">
+            <svg viewBox="0 0 18 16" display="inline-block" focusable="false" role="presentation" width="18px"
+              height="16px" class="css-1xr2rz4">
+              <path
+                d="M18 2.22559C17.332 2.52441 16.6289 2.72656 15.873 2.81445C16.6465 2.35742 17.2266 1.62793 17.499 0.766602C16.7959 1.18848 15.9961 1.49609 15.1699 1.66309C14.4756 0.959961 13.5176 0.50293 12.4541 0.50293C10.415 0.50293 8.77148 2.14648 8.77148 4.18555C8.77148 4.47559 8.78906 4.77441 8.85059 5.03809C5.79199 4.87109 3.08496 3.48242 1.24805 1.25C0.94043 1.79492 0.74707 2.35742 0.74707 3.04297C0.74707 4.30859 1.39746 5.43359 2.39941 6.10156C1.79297 6.08398 1.23047 5.91699 0.729492 5.64453V5.68848C0.729492 7.48145 2.00391 8.97559 3.69141 9.30957C3.375 9.39746 3.04102 9.44141 2.70703 9.44141C2.47852 9.44141 2.25 9.41504 2.02148 9.37109C2.47852 10.8301 3.8584 11.9199 5.45801 11.9375C4.20996 12.9395 2.60156 13.6865 0.878906 13.6865C0.580078 13.6865 0.290039 13.6689 0 13.625C1.62598 14.6709 3.58594 15.1279 5.66895 15.1279C12.4541 15.1279 16.1631 9.50293 16.1631 4.625V4.1416C16.875 3.62305 17.499 2.98145 18 2.22559Z"
+                fill="#25273D"></path>
+            </svg>
+          </a>
+          <a href="">
+            <svg viewBox="0 0 20 23" display="inline-block" focusable="false" role="presentation" width="20px"
+              height="23px" class="css-1xr2rz4">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.09668 10.9676C7.09668 10.2585 7.60691 9.67725 8.25321 9.67725C8.8995 9.67725 9.42107 10.2585 9.40974 10.9676C9.40974 11.6767 8.8995 12.2579 8.25321 12.2579C7.61825 12.2579 7.09668 11.6767 7.09668 10.9676ZM11.2352 10.9677C11.2352 10.2586 11.7454 9.67742 12.3917 9.67742C13.038 9.67742 13.5483 10.2586 13.5483 10.9677C13.5483 11.6768 13.038 12.2581 12.3917 12.2581C11.7568 12.2581 11.2352 11.6768 11.2352 10.9677Z"
+                fill="#25273D"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.34286 0H17.6571C18.9486 0 20 1.03871 20 2.32581V22.5806L17.5429 20.4355L16.16 19.171L14.6971 17.8274L15.3029 19.9161H2.34286C1.05143 19.9161 0 18.8774 0 17.5903V2.32581C0 1.03871 1.05143 0 2.34286 0ZM12.4915 13.8307C12.8343 14.2597 13.2458 14.7452 13.2458 14.7452C15.7715 14.6662 16.7429 13.0291 16.7429 13.0291C16.7429 9.39358 15.0972 6.44681 15.0972 6.44681C13.4515 5.22745 11.8858 5.26132 11.8858 5.26132L11.7258 5.44197C13.6686 6.02907 14.5715 6.87584 14.5715 6.87584C13.3829 6.23229 12.2172 5.91616 11.1315 5.79197C10.3086 5.70165 9.52006 5.72423 8.82291 5.81455C8.76305 5.81455 8.7119 5.82315 8.65426 5.83285C8.64587 5.83426 8.63734 5.8357 8.62863 5.83713C8.22863 5.871 7.2572 6.01778 6.03434 6.54842C5.61149 6.74036 5.36006 6.87584 5.36006 6.87584C5.36006 6.87584 6.30863 5.9839 8.36577 5.39681L8.25149 5.26132C8.25149 5.26132 6.68577 5.22745 5.04006 6.44681C5.04006 6.44681 3.39434 9.39358 3.39434 13.0291C3.39434 13.0291 4.35434 14.6662 6.88006 14.7452C6.88006 14.7452 7.30291 14.2371 7.64577 13.8081C6.19434 13.3791 5.64577 12.4758 5.64577 12.4758C5.64577 12.4758 5.76006 12.5549 5.96577 12.6678C5.9772 12.6791 5.98863 12.6904 6.01149 12.7016C6.02863 12.7129 6.04577 12.7214 6.06291 12.7299C6.08006 12.7383 6.0972 12.7468 6.11434 12.7581C6.40006 12.9162 6.68577 13.0404 6.94863 13.142C7.4172 13.3226 7.9772 13.5033 8.62863 13.6275C9.48577 13.7855 10.4915 13.842 11.5886 13.6387C12.1258 13.5484 12.6743 13.3904 13.2458 13.1533C13.6458 13.0065 14.0915 12.792 14.5601 12.4871C14.5601 12.4871 13.9886 13.4129 12.4915 13.8307Z"
+                fill="#25273D"></path>
+            </svg>
+          </a>
+          <a href="">
+            <svg viewBox="0 0 21 21" display="inline-block" focusable="false" role="presentation" width="21px"
+              class="css-1xr2rz4">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.4888 0.123047C4.69372 0.123047 0 4.81676 0 10.6118C0 15.2531 3.00241 19.1732 7.17169 20.563C7.69613 20.6548 7.89279 20.3401 7.89279 20.0648C7.89279 19.8157 7.87968 18.9897 7.87968 18.1113C5.24438 18.5964 4.56261 17.4688 4.35283 16.8788C4.23484 16.5773 3.72351 15.6464 3.27774 15.3973C2.91063 15.2006 2.38619 14.7155 3.26463 14.7024C4.09062 14.6893 4.68061 15.4629 4.87727 15.7775C5.82126 17.3639 7.32902 16.9182 7.93212 16.6428C8.0239 15.9611 8.29923 15.5022 8.60078 15.24C6.26703 14.9777 3.8284 14.0731 3.8284 10.0611C3.8284 8.92049 4.23484 7.9765 4.90349 7.24229C4.79861 6.98007 4.4315 5.90497 5.00838 4.46277C5.00838 4.46277 5.88682 4.18744 7.89279 5.53787C8.73189 5.30187 9.62344 5.18387 10.515 5.18387C11.4065 5.18387 12.2981 5.30187 13.1372 5.53787C15.1431 4.17433 16.0216 4.46277 16.0216 4.46277C16.5985 5.90497 16.2314 6.98007 16.1265 7.24229C16.7951 7.9765 17.2016 8.90738 17.2016 10.0611C17.2016 14.0862 14.7498 14.9777 12.4161 15.24C12.7963 15.5677 13.1241 16.1971 13.1241 17.1804C13.1241 18.5833 13.1109 19.7108 13.1109 20.0648C13.1109 20.3401 13.3076 20.6679 13.8321 20.563C17.9751 19.1732 20.9775 15.24 20.9775 10.6118C20.9775 4.81676 16.2838 0.123047 10.4888 0.123047Z"
+                fill="#25273D"></path>
+            </svg>
+          </a>
+        </div>
+        <p class="flex-center">
+          English
+          <svg viewBox="0 0 14 9" display="inline-block" focusable="false" role="presentation" width="10px" height="7px"
+            class="css-1hl367z">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M2.12117 0.7072C1.73064 0.316676 1.09748 0.316676 0.706956 0.7072C0.316431 1.09772 0.316431 1.73089 0.706956 2.12141L6.36381 7.77827C6.37601 7.79047 6.38845 7.80229 6.40112 7.81374C6.41063 7.82233 6.42026 7.8307 6.43002 7.83887C6.8229 8.16772 7.40894 8.14755 7.77813 7.77836L13.435 2.12151C13.8255 1.73098 13.8255 1.09782 13.435 0.707293C13.0445 0.316769 12.4113 0.316769 12.0208 0.707293L7.07102 5.65705L2.12117 0.7072Z"
+              fill="currentColor"></path>
+          </svg>
+        </p>
+      </div>
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Team</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">Privacy</a></li>
+        <li><a href="">Cookie< Policy/a>
+        </li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Security</a></li>
+      </ul>
+      <ul>
+        <li><a href="">Resources</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Knowledge Base</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Bug Bounty</a></li>
+        <li><a href="">Referrals</a></li>
+        <li><a href="">Brand</a> assets</li>
+      </ul>
+      <ul>
+        <li><a href="">Products</a></li>
+        <li><a href="">Borrow</a></li>
+        <li><a href="">Multiply</a></li>
+        <li><a href="">Earn</a></li>
+      </ul>
+      <div class="footer-stayuptodate">
+        <h1>Stay up to date with Oasis.app</h1>
+        <p>Subscribe to the newsletter for Oasis updates</p>
+        <div class="main-stayuptodate-input-wrapper footer flex-between">
+          <input type="text" placeholder="Email Address">
+          <a href="" class="flex-center">
+            Subscribe
+            <svg width="12" height="12" viewBox="0 0 20 20" display="inline-block" focusable="false" role="presentation"
+              class="css-1n23f1u">
+              <path
+                d="M19.4908 10.0863L19.5969 10.1924L19.4908 10.2984L18.8347 10.9546L18.8338 10.9555L12.9248 16.8644C12.5036 17.2856 11.8207 17.2856 11.3995 16.8644C10.9783 16.4432 10.9783 15.7603 11.3995 15.3391L15.4677 11.2709L2.31319 11.2709C1.71752 11.2709 1.23462 10.7881 1.23462 10.1924C1.23462 9.5967 1.71752 9.11381 2.31319 9.11381L15.4677 9.11381L11.3995 5.04565C10.9783 4.62444 10.9783 3.94153 11.3995 3.52032C11.8207 3.09911 12.5036 3.09911 12.9248 3.52032L18.8338 9.42926L18.8347 9.43017L19.4908 10.0863Z"
+                stroke-width="0.3" stroke-linecap="round" fill="#787a9b"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <img class="bg-body-bottom" src="./assets/images/bg-body-bottom.png" alt="bg-body-bottom">
+  </footer>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
